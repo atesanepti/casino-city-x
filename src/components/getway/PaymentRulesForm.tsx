@@ -44,6 +44,7 @@ const PaymentRulesForm = ({ form, gateway }: PaymentRulesFormProps) => {
 
   return (
     <div>
+      
       <Select
         defaultValue={RulesType.DESPOSIT}
         onValueChange={(value: RulesType) => setTypeOfRules(value)}
@@ -56,6 +57,7 @@ const PaymentRulesForm = ({ form, gateway }: PaymentRulesFormProps) => {
           <SelectItem value={RulesType.WITHDRAW}>Withdraw Rules</SelectItem>
         </SelectContent>
       </Select>
+
       <div>
         {typeOfRules === RulesType.DESPOSIT && (
           <DepositRulesForm form={form} gateway={gateway} />
@@ -65,6 +67,7 @@ const PaymentRulesForm = ({ form, gateway }: PaymentRulesFormProps) => {
           <WithdrawForm form={form} gateway={gateway} />
         )}
       </div>
+
     </div>
   );
 };

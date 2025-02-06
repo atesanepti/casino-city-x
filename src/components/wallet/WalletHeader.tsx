@@ -1,6 +1,7 @@
 import { getCurrentUser } from "@/lib/getCurrentUser";
 import { Gem } from "lucide-react";
 import React from "react";
+import SigunoutButton from "@/components/sigunoutButton";
 
 const WalletHeader = async () => {
   const user = await getCurrentUser();
@@ -15,6 +16,7 @@ const WalletHeader = async () => {
           <span className="text-brand">{lastName}</span>
         </h3>
       </div>
+      <SigunoutButton />
     </div>
   );
 };
