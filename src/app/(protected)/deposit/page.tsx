@@ -29,7 +29,7 @@ const DepositPage = () => {
             />
           </div>
           <h3 className="text-lg font-medium text-white mb-1">Deposit</h3>
-          <InfoMessage message="Note : If You don't get Deposit at time please contact our Team. epti060@gamil.com with your deposit info." />
+          <InfoMessage message="Note : If You don't get Deposit at time please contact our Team with your deposit info." />
         </div>
 
         <div className="mt-2">
