@@ -15,7 +15,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "../ui/button";
-import { PhoneInput } from "../input/PhoneInput";
 import { signupSchema } from "@/schema";
 import { signUp } from "@/actions/signup";
 import { redirect } from "next/navigation";
@@ -98,11 +97,10 @@ const Signup = () => {
               <FormItem>
                 <FormLabel>Phone Number</FormLabel>
                 <FormControl>
-                  <PhoneInput
+                  <Input
+                    {...field}
                     disabled={isInputDisable}
-                    onChange={field.onChange}
                     autoComplete="off"
-                    value={field.value}
                   />
                 </FormControl>
                 <FormMessage />
