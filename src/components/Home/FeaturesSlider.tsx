@@ -1,6 +1,6 @@
 "use client";
 import Autoplay from "embla-carousel-autoplay";
-import silder_1 from "@/../public/assets/slider-1.png";
+// import silder_1 from "@/../public/assets/slider-1.png";
 // import silder_2 from "@/../public/assets/slider-2.png";
 import {
   Carousel,
@@ -25,7 +25,9 @@ const FeaturesSlider = () => {
             <CarouselItem key={index}>
               <div className="p-1">
                 <Image
-                  src={silder_1}
+                  src={"/assets/slider-1.png"}
+                  width={100}
+                  height={100}
                   alt="slider"
                   className="w-full aspect-[10/4] rounded-lg object-cover"
                 />

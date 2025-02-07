@@ -1,6 +1,6 @@
 import React from "react";
 
-import aviator from "@/../public/assets/games/aviator.webp";
+// import aviator from "@/../public/assets/games/aviator.webp";
 import Image from "next/image";
 import Link from "next/link";
 import { Gamepad, Play } from "lucide-react";
@@ -29,7 +29,9 @@ const Crash = () => {
           </Link>
         </div>
         <Image
-          src={aviator}
+          src={"/assets/games/aviator.webp"}
+          width={100}
+          height={100}
           alt="Crash"
           className="w-[180px] aspect-video object-cover rounded-lg"
         />

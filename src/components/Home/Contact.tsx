@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 // import facebook from "@/../public/assets/facebook.png";
-import telegram from "@/../public/assets/telegram.png";
-import whatsapp from "@/../public/assets/whatsapp.png";
+// import telegram from "@/../public/assets/telegram.png";
+// import whatsapp from "@/../public/assets/whatsapp.png";
 import { BadgeHelp } from "lucide-react";
 const Contact = () => {
   const { data } = useFetchContactInfoQuery();
@@ -44,7 +44,13 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Image src={whatsapp} alt="Whatsapp" className="w-7" />
+                  <Image
+                    width={100}
+                    height={100}
+                    src={"/assets/whatsapp.png"}
+                    alt="Whatsapp"
+                    className="w-7"
+                  />
                 </Link>
               </li>
             )}
@@ -54,7 +60,13 @@ const Contact = () => {
                   href={`https://t.me/${contactInfo.telegram}`}
                   target="_blank"
                 >
-                  <Image src={telegram} alt="Telegram" className="w-7" />
+                  <Image
+                    width={100}
+                    height={100}
+                    src={"/assets/telegram.png"}
+                    alt="Telegram"
+                    className="w-7"
+                  />
                 </Link>
               </li>
             )}

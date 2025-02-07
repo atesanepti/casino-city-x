@@ -10,7 +10,8 @@ const SlideInfo = () => {
         </div>
 
         <p className="flex-shrink-0 text-xs text-white">
-          20% Instant Desposit Bonus! Refer Your Friend to Up to Data Bonus Cash!
+          20% Instant Desposit Bonus! Refer Your Friend to Up to Data Bonus
+          Cash!
         </p>
       </div>
     </div>

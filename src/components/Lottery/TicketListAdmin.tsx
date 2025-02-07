@@ -14,9 +14,9 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import Image from "next/image";
-import gold from "@/../public/assets/lottery/gold-icon.png";
-import platinum from "@/../public/assets/lottery/platinum-icon.png";
-import diamond from "@/../public/assets/lottery/diamond-icon.png";
+// import gold from "@/../public/assets/lottery/gold-icon.png";
+// import platinum from "@/../public/assets/lottery/platinum-icon.png";
+// import diamond from "@/../public/assets/lottery/diamond-icon.png";
 import { Input } from "../ui/input";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
@@ -108,7 +108,9 @@ const TicketListAdmin = () => {
             <div className="flex items-center">
               <div className="bg-primary border w-9 h-9 border-border rounded-s-md p-1 flex justify-center items-center">
                 <Image
-                  src={gold}
+                  width={100}
+                  height={100}
+                  src={"/assets/lottery/gold-icon.png"}
                   alt="Gold"
                   className="w-7  aspect-square "
                   placeholder="blur"
@@ -130,7 +132,9 @@ const TicketListAdmin = () => {
             <div className="flex items-center">
               <div className="bg-primary w-9 h-9 border border-border rounded-s-md p-1 flex justify-center items-center">
                 <Image
-                  src={platinum}
+                  src={"/assets/lottery/platinum-icon.png"}
+                  width={100}
+                  height={100}
                   alt="Platinum"
                   className="w-9 aspect-square "
                   placeholder="blur"
@@ -152,7 +156,9 @@ const TicketListAdmin = () => {
             <div className="flex items-center">
               <div className="bg-primary border w-9 h-9 rounded-s-md border-border rounded-sm p-1 flex justify-center items-center">
                 <Image
-                  src={diamond}
+                  src={"/assets/lottery/diamond-icon.png"}
+                  width={100}
+                  height={100}
                   alt="Diamond"
                   className="w-7 aspect-square "
                   placeholder="blur"
@@ -192,7 +198,9 @@ const TicketListAdmin = () => {
                           onClick={() =>
                             handleSetUserForPrize(t.id, prize.gold)
                           }
-                          src={gold}
+                          src={"/assets/lottery/gold-icon.png"}
+                          width={100}
+                          height={100}
                           alt="Gold"
                           className={cn(
                             "w-4 aspect-square rounded-full p-[2px]",
@@ -207,7 +215,9 @@ const TicketListAdmin = () => {
                           onClick={() =>
                             handleSetUserForPrize(t.id, prize.platinum)
                           }
-                          src={platinum}
+                          src={"/assets/lottery/platinum-icon.png"}
+                          width={100}
+                          height={100}
                           alt="Platinum"
                           className={cn(
                             "w-5 aspect-square  rounded-full p-[2px]",
@@ -223,7 +233,9 @@ const TicketListAdmin = () => {
                           onClick={() =>
                             handleSetUserForPrize(t.id, prize.diamond)
                           }
-                          src={diamond}
+                          src={"/assets/lottery/diamond-icon.png"}
+                          width={100}
+                          height={100}
                           alt="Diamond"
                           className={cn(
                             "w-4 aspect-square rounded-full p-[2px]",
