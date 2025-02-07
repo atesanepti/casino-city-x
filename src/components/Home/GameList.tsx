@@ -2,11 +2,11 @@ import React from "react";
 
 import Image from "next/image";
 
-import multiplier from "@/../public/assets/games/multiplier.webp";
-import slot from "@/../public/assets/games/slot.jpg";
-import wheel from "@/../public/assets/games/wheel.jpg";
-import toss from "@/../public/assets/games/toss.jpg";
-import dice from "@/../public/assets/games/dice.jpg";
+// import multiplier from "@/../public/assets/games/multiplier.webp";
+// import slot from "@/../public/assets/games/slot.jpg";
+// import wheel from "@/../public/assets/games/wheel.jpg";
+// import toss from "@/../public/assets/games/toss.jpg";
+// import dice from "@/../public/assets/games/dice.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -24,7 +24,9 @@ const GameList = () => {
           <CarouselItem className="basis-1/2 lg:basis-1/3 shadow-sm">
             <Link href="/game/wheel" className="relative ">
               <Image
-                src={wheel}
+                width={100}
+                height={100}
+                src={"/assets/games/wheel.jpg"}
                 alt="wheel"
                 className="w-full aspect-[10/5] object-cover rounded-md"
                 placeholder="blur"
@@ -37,7 +39,9 @@ const GameList = () => {
           <CarouselItem className="basis-1/2 lg:basis-1/3 shadow-sm">
             <Link href="/game/slot" className="relative ">
               <Image
-                src={slot}
+                width={100}
+                height={100}
+                src={"/assets/games/slot.jpg"}
                 alt="slot"
                 className="w-full aspect-[10/5] object-cover rounded-md"
                 placeholder="blur"
@@ -50,10 +54,12 @@ const GameList = () => {
           <CarouselItem className="basis-1/2 lg:basis-1/3 shadow-sm">
             <Link href="/game/multiplier" className="relative ">
               <Image
-                src={multiplier}
+                src={"/assets/games/multiplier.webp"}
                 alt="multiplier"
                 className="w-full aspect-[10/5] object-cover rounded-md"
                 placeholder="blur"
+                width={100}
+                height={100}
               />
               <span className="text-xs text-white game-title  absolute font-oswald font-semibold left-2 bottom-2">
                 Score Multiplier
@@ -64,8 +70,10 @@ const GameList = () => {
           <CarouselItem className="basis-1/2 lg:basis-1/3 shadow-sm">
             <Link href="/game/dice" className="relative ">
               <Image
-                src={dice}
+                src={"/assets/games/dice.jpg"}
                 alt="Dice"
+                width={100}
+                height={100}
                 className="w-full aspect-[10/5] object-cover rounded-md"
                 placeholder="blur"
               />
@@ -78,7 +86,9 @@ const GameList = () => {
           <CarouselItem className="basis-1/2 lg:basis-1/3 shadow-sm">
             <Link href="/game/toss" className="relative ">
               <Image
-                src={toss}
+                width={100}
+                height={100}
+                src={"/assets/games/toss.jpg"}
                 alt="Heads/Tails"
                 className="w-full aspect-[10/5] object-cover rounded-md"
                 placeholder="blur"
