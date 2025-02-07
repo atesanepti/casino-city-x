@@ -10,7 +10,7 @@ import {
 import WinSlot from "./icons/WinSlot";
 import LossSlot from "./icons/LossSlot";
 import Image from "next/image";
-import wrong from "@/../public/assets/remove.png"
+// import wrong from "@/../public/assets/remove.png"
 
 const Tutorial = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -33,7 +33,9 @@ const Tutorial = ({ children }: { children: React.ReactNode }) => {
           <div className="relative">
             <LossSlot />
             <Image
-              src={wrong}
+              src={"/assets/remove.png"}
+              width={100}
+              height={100}
               alt="wrong"
               placeholder="blur"
               className="w-4 h-4 absolute left-1/2 -translate-x-1/2 top-15"

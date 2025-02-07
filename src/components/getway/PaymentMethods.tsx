@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { PaymentMethod, Prisma } from "@prisma/client";
 
-import nagad from "@/../public/assets/nagad.png";
-import wallet from "@/../public/assets/wallet.png";
+// import nagad from "@/../public/assets/nagad.png";
+// import wallet from "@/../public/assets/wallet.png";
 import Image from "next/image";
 import { useGetPaymentGatewayQuery } from "@/lib/features/api/gatewayApiSlice";
 import { cn } from "@/lib/utils";
@@ -65,8 +65,8 @@ const PaymentMethods = ({
                     g.method === PaymentMethod.BKASH
                       ? "/assets/bkash.png"
                       : g.method === PaymentMethod.NAGAD
-                      ? nagad
-                      : wallet
+                      ? "/assets/nagad.png"
+                      : "/assets/wallet.png"
                   }
                   alt={g.method}
                   className="w-12 aspect-square object-cover rounded-md"
