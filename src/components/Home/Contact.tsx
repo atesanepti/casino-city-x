@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import { useFetchContactInfoQuery } from "@/lib/features/api/contactApiSlice";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import facebook from "@/../public/assets/facebook.png";
+// import facebook from "@/../public/assets/facebook.png";
 import telegram from "@/../public/assets/telegram.png";
 import whatsapp from "@/../public/assets/whatsapp.png";
 import { BadgeHelp } from "lucide-react";
@@ -24,7 +24,13 @@ const Contact = () => {
             {contactInfo.facebook && (
               <li className="text-xs text-muted-foreground hover:underline hover:text-white transition-all">
                 <Link href={contactInfo.facebook} target="_blank">
-                  <Image src={facebook} alt="Facebook" className="w-7" />
+                  <Image
+                    width={100}
+                    height={100}
+                    src={"/assets/facebook.png"}
+                    alt="Facebook"
+                    className="w-7"
+                  />
                 </Link>
               </li>
             )}

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { PaymentMethod, Prisma } from "@prisma/client";
-import bkash from "@/../public/assets/bkash.png";
+
 import nagad from "@/../public/assets/nagad.png";
 import wallet from "@/../public/assets/wallet.png";
 import Image from "next/image";
@@ -63,7 +63,7 @@ const PaymentMethods = ({
                 <Image
                   src={
                     g.method === PaymentMethod.BKASH
-                      ? bkash
+                      ? "/assets/bkash.png"
                       : g.method === PaymentMethod.NAGAD
                       ? nagad
                       : wallet
@@ -71,6 +71,8 @@ const PaymentMethods = ({
                   alt={g.method}
                   className="w-12 aspect-square object-cover rounded-md"
                   placeholder="blur"
+                  width={100}
+                  height={100}
                 />
                 <span className="text-xs capitalize">{g.method}</span>
               </button>
