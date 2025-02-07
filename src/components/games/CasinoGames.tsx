@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import multiplier from "@/../public/assets/games/multiplier.webp";
-import slot from "@/../public/assets/games/slot.jpg";
-import wheel from "@/../public/assets/games/wheel.jpg";
-import toss from "@/../public/assets/games/toss.jpg";
-import dice from "@/../public/assets/games/dice.jpg";
+// import multiplier from "@/../public/assets/games/multiplier.webp";
+// import slot from "@/../public/assets/games/slot.jpg";
+// import wheel from "@/../public/assets/games/wheel.jpg";
+// import toss from "@/../public/assets/games/toss.jpg";
+// import dice from "@/../public/assets/games/dice.jpg";
 import Link from "next/link";
 
 const CasinoGames = () => {
@@ -14,7 +14,9 @@ const CasinoGames = () => {
         <div>
           <Image
             className="w-full aspect-[10/5] object-cover rounded-md"
-            src={multiplier}
+            src={"/assets/games/multiplier.webp"}
+            width={100}
+            height={100}
             alt="Multiplier"
             placeholder="blur"
           />
@@ -26,7 +28,9 @@ const CasinoGames = () => {
         <div>
           <Image
             className="w-full aspect-[10/5] object-cover rounded-md"
-            src={slot}
+            src={"/assets/games/slot.jpg"}
+            width={100}
+            height={100}
             alt="Slot"
             placeholder="blur"
           />
@@ -38,7 +42,9 @@ const CasinoGames = () => {
         <div>
           <Image
             className="w-full aspect-[10/5] object-cover rounded-md"
-            src={wheel}
+            src={"/assets/games/wheel.jpg"}
+            width={100}
+            height={100}
             alt="Wheel"
             placeholder="blur"
           />
@@ -50,7 +56,9 @@ const CasinoGames = () => {
         <div>
           <Image
             className="w-full aspect-[10/5] object-cover rounded-md"
-            src={dice}
+            src={"assets/games/dice.jpg"}
+            width={100}
+            height={100}
             alt="dice"
             placeholder="blur"
           />
@@ -62,7 +70,9 @@ const CasinoGames = () => {
         <div>
           <Image
             className="w-full aspect-[10/5] object-cover rounded-md"
-            src={toss}
+            src={"/assets/games/toss.jpg"}
+            width={100}
+            height={100}
             alt="Heads - Tails"
             placeholder="blur"
           />
