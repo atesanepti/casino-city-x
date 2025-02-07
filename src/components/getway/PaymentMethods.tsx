@@ -37,7 +37,7 @@ const PaymentMethods = ({
 
   return (
     <div className="flex gap-2 items-center">
-      {gateway && (
+      {gateway && gateway.length > 0 && (
         <div>
           <h4 className="text-white text-sm font-medium mb-2">
             *Select Payment Methods
@@ -80,12 +80,12 @@ const PaymentMethods = ({
       )}
 
       {isLoading && (
-        <div>
+        <div className="w-full">
           <Skeleton className="h-4 w-[200px]" />
-          <div className="flex  gap-2 mt-2">
-            <Skeleton className="h-16" />
-            <Skeleton className="h-16" />
-            <Skeleton className="h-16" />
+          <div className="flex w-full gap-2 mt-2">
+            <Skeleton className="h-16 flex-1" />
+            <Skeleton className="h-16  flex-1" />
+            <Skeleton className="h-16  flex-1" />
           </div>
         </div>
       )}
