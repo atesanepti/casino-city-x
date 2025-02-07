@@ -1,7 +1,7 @@
 import { getCurrentUser } from "@/lib/getCurrentUser";
 import { Gem } from "lucide-react";
 import React from "react";
-import SigunoutButton from "@/components/sigunoutButton";
+import SigunoutButton from "@/components/SigunoutButton";
 
 const WalletHeader = async () => {
   const user = await getCurrentUser();
